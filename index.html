@@ -2,60 +2,42 @@
 <html>
 
 <head>
-    <title>Lista de Tarefas</title>
+  <title>Lista de Tarefas</title>
 </head>
 
 <body>
+  <section class="container">
+    <h1>Lista de Tarefas</h1>
+    <div class="new-task-container box">
+      <label for="new-task">Adicionar nova tarefa</label>
+      <input type="text" id="new-task">
+      <button id="addTask" onclick="addTask()">Adicionar</button>
+    </div>
 
-
-    <section class="container">
-
-        <h1>Lista de Tarefas</h1>
-
-        <div class="new-task-container box">
-
-            <label for="new-task">Adicionar nova tarefa</label>
-            <input type="text" id="new-task">
-            <button id="addTask" onclick="addTask()">Adicionar</button>
-
-        </div>
-
-        <div class="todo-list box">
-
-            <h2>Tarefas a fazer</h2>
-            <ul>
-                <li><input type="checkbox"><label>Nome da tarefa</lable>
+    <div class="todo-list box">
+      <h2>Tarefas a fazer</h2>
+      <ul>
+        <li>
+          <input type="checkbox"><label>Nome da tarefa</lable>
         </li>
-        <li><input type="checkbox"><label>Nome da tarefa</lable>
+        <li>
+          <input type="checkbox"><label>Nome da tarefa</lable>
         </li>
-        <li><input type="checkbox"><label>Nome da tarefa</lable>
+        <li>
+          <input type="checkbox"><label>Nome da tarefa</lable>
         </li>
       </ul>
-
     </div>
-    <!--/todo-list-->
 
     <div class="complete-list box">
-
       <h2>Tarefas feitas</h2>
       <ul>
         <li>Nome da tarefa <button class="delete">Apagar</button></li>
-
       </ul>
-
-
     </div>
-    <!--/complete-list-->
-
-
-
-
-
   </section>
-  <!--/container-->
-    
-    <script src="todo.js"></script>
 
+  <script src="js/todo.js"></script>
 </body>
 
 </html>
